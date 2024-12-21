@@ -1,0 +1,17 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <div>
+                {{#each books}}
+                    <p style="color: rgb(5, 36, 234);">{{title}}</p>
+                    <p style="font-weight: bold;">Author :{{author}}</p>
+                {{/each}}
+            </div>
+        </div>
+    </body>
+</html>

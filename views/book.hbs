@@ -1,0 +1,16 @@
+<head>
+    <link rel="stylesheet" href="/style.css" />
+
+</head>
+<div>
+    {{!-- {{book.title}}
+    <div class="head">
+        {{book.author}}
+    </div> --}}
+
+    {{#if book.title}}
+        <p>the book body is {{book.title}}</p>
+    {{else}}
+        <p>No body found</p>
+    {{/if}}
+</div>

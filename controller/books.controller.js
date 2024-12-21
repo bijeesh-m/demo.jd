@@ -1,11 +1,12 @@
-const books = require("../data");
+const Books = require("../model/book.model");
 
 module.exports.getAllBooks = async (req, res) => {
+    const books = await Books.find();
     res.send(books);
 };
 
 module.exports.getBookById = async (req, res) => {
     const bookId = req.params.id;
     const book = books.find((book) => book.id === Number(bookId));
-    res.send(book);
+    res.render("new", { book, user: true });
 };
